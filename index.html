@@ -1,9 +1,105 @@
 <html>
   <head>
-    <title>Taniti
+    <title>Taniti Tourism
     </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      :root {
+        --nav-bar-a-hover-color-theme:      white;
+        --nav-bar-a-hover-background-theme: green;
+        --nav-bar-background:               rgb(100,100,100);
+        --nav-bar-border:                     1px solid #e7e7e7;
+        --nav-bar-a-color:                  #666;
+        --nav-bar-a-background:             rgb(52,52,52);
+        --nav-bar-a-border:                   1px solid #bbb;
+        --nav-bar-a-active-color:             var(--nav-bar-a-hover-color-theme);
+        --nav-bar-a-active-background:        var(--nav-bar-a-hover-background-theme);
+        --nav-bar-a-hover-color:              var(--nav-bar-a-hover-color-theme);
+        --nav-bar-a-hover-background:         var(--nav-bar-a-hover-background-theme);
+        --nav-bar-a-active-hover-color:     #666;
+        --nav-bar-a-active-hover-background:rgb(52,52,52);
+      }
+      body {
+        background-color: rgb(42, 42, 42);
+      }
+
+      h1 {
+        color: rgb(10, 48, 238);
+        text-align: center;
+      }
+
+      /* Top navigation bar */
+      .nav-bar ul {
+        border-radius: 10px;
+        list-style-type: none;
+        right: 0;
+        border: var(--nav-bar-border);
+        position: fixed;
+        width: 99%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: var(--nav-bar-background);
+      }
+      .nav-bar li {
+        float: right;
+      }
+      .nav-bar li a {
+        color: var(--nav-bar-a-color);
+        display: block;
+        background-color: var(--nav-bar-a-background);
+        text-align: center;
+        text-decoration: none;
+        padding: 10px;
+        border-left: var(--nav-bar-a-border);
+        transition: background-color .5s, padding-left .5s, padding-right .5s;
+      }
+      /* Nav Bar Link Active */
+      .nav-bar li a.active {
+        color: var(--nav-bar-a-active-color);
+        background-color: var(--nav-bar-a-active-background);
+      }
+      /* Nav Bar Hover (Active and Not Active) */
+      .nav-bar li a:hover {
+        padding-left: 12px;
+        padding-right: 12px;
+      }
+      /* Nav Bar Link Hover (Not active) */
+      .nav-bar li a:hover:not(.active) {
+        color: var(--nav-bar-a-hover-color);
+        background-color: var(--nav-bar-a-hover-background);
+      }
+      /* Nav Bar Link Hover (Active) */
+      .nav-bar li a.active:hover {
+        color: var(--nav-bar-a-active-hover-color);
+        background-color: var(--nav-bar-a-active-hover-background);
+      }
+      /* Nav Bar Logo */
+      .nav-bar li.nav-bar-logo {
+        float: left;
+        padding-right: 20px;
+      }
+
+      /* Convert top nav bar to vertical on small screens */
+      @media screen and (max-width: 400px) {
+        .nav-bar li, li.nav-bar-logo {float: none;}
+      }
+    </style>
+    <!-- load in google icons API -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   </head>
   <body>
-    <h1>Tanini Tourism</h1>
+    <div class="nav-bar">
+      <ul>
+        <li class="nav-bar-logo"><a href="./index.html">Island of Taniti</a></li>
+         <li><a href="./about/index.html">About</a></li>
+        <li><a href="./travel/index.html">Travel</a></li>
+        <li><a href="./leisure/index.html">Leisure</a></li>
+        <li><a href="./activities/index.html">Activities</a></li>
+        <li><a class="active" href="./index.html">Home</a></li>
+      </ul>
+    </div>
+    <br><br>
+    <h1>Taniti Tourism</h1>
   </body>
 </html>
