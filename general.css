@@ -88,11 +88,15 @@ h1 {
 }
 
 .header-bar .searchInput {
-  float: right;
-  text-align: right;
-  margin-right: 20px;
-  width: 100px;
-  transition: width 1s;
+    background-color: white;
+    background-image: url('images/search_icon.png');
+    background-size: 18px;
+    background-repeat: no-repeat;
+    float: right;
+    text-align: right;
+    margin-right: 20px;
+    width: 100px;
+    transition: width 1s;
 }
 .header-bar .searchInput:hover {
   width: 200px;
@@ -153,12 +157,18 @@ h1 {
   box-sizing: border-box;
 }
 .body {
+  left: 5%;
   width: 90%;
+  margin: 50px;
+  display: block;
+  overflow: hidden;
+  text-align: left;
 }
+
 .footer {
   margin: auto;
   width: 100%;
-  height: 200px;
+  height: 50px;
   border: 1px solid #bbb;
   background-color: #111;
   color: #bbb;
@@ -227,6 +237,15 @@ div.gallery img {
   .header-bar ul li a { display: none; }
   .header-bar .searchInput { width: 200px; }
   .nav-bar li.nav-bar-logo { width: 40px; }
+
+  input[type=text].inquire, select.inquire, textarea.inquire {
+    width: 100%;
+    padding: 0px;
+  }
+
+  label {
+    padding: 0px;
+  }
 }
 .container {
   position: relative;
@@ -259,3 +278,34 @@ div.gallery img {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
 }
+
+input[type=text]:focus {
+    background-color: lightblue;
+}
+
+input[type=text].inquire, select.inquire, textarea.inquire {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+  }
+  
+  label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+  }
+  
+  input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #45a049;
+  }
