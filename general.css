@@ -135,9 +135,19 @@ h1 {
 }
 /* Nav Bar Hover (Active and Not Active) */
 .nav-bar li a:hover {
-  padding: 15px 30px;
-  transition: padding .5s;
+    animation-name: jiggle_text;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+
+@keyframes jiggle_text {
+    0%      { transform: rotate(0deg) scale(1.4); }
+    25%     { transform: rotate(10deg) scale(1.4); }
+    50%     { transform: rotate(0deg) scale(1.4); }
+    75%     { transform: rotate(-10deg) scale(1.4); }    
+    100%    { transform: rotate(0deg) scale(1.4); }
+  }
 /* Nav Bar Link Hover (Not active) */
 .nav-bar li a:hover:not(.active, .nav-bar-logo) {
   color: var(--nav-bar-a-hover-color);
