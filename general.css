@@ -52,7 +52,7 @@ h1 {
   padding: 0;
   overflow: hidden;
   background-color: black;
-  color: rgb(232, 230, 227);;
+  color: rgb(232, 230, 227);
   z-index: 1;
 }
 .header-bar li a {
@@ -246,6 +246,14 @@ div.gallery img {
   label {
     padding: 0px;
   }
+  .hero-text-center {
+    position: relative;
+    top: 40%;
+  }
+  .hero-subtext {
+    position: relative;
+    top: 40%;
+  }
 }
 .container {
   position: relative;
@@ -308,4 +316,44 @@ input[type=text].inquire, select.inquire, textarea.inquire {
   
   input[type=submit]:hover {
     background-color: #45a049;
+  }
+
+  .links {
+    margin-top: 30px;
+  }
+  .links div {
+    border-radius: 10px;
+    display: inline-block;
+    width: 40%;
+    border: 1px solid #bbb;
+    padding: 20px;
+    font-size: 40px;
+    background-color: transparent;
+    transition: background-color .5s;
+  }
+  .links a {
+    text-decoration: none;
+    color: rgb(232, 230, 227);
+  }
+  .links .arrow {
+    position: relative;
+    border: none;
+    background-image: url('images/double_arrow_right_white.png');
+    background-repeat: no-repeat;
+    background-size: 50px;
+    width: 10%;
+  }
+  .links div:hover {
+    background-color: purple;
+  }
+  .links div:hover .arrow {
+    animation-name: arrow_right;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes arrow_right {
+    0%   {opacity: 1.0; left:0px;}
+    100% {opacity: 0; left: 50px;}
   }
