@@ -1,6 +1,6 @@
 # C856 Website Project #
 
-Link: [https://johnson336.github.io/C856/](https://johnson336.github.io/C856/)
+Link: [https://johnson336.github.io/C856/](https://johnson336.github.io/Taniti-Tourism/)
 
 This website is a project for WGU BS - Software Development course C856. It is a demonstration tourism website for the fictional island of Taniti. It was created to demonstrate competence in the following web design concepts:
   - Responsive UX Design
@@ -15,4 +15,4 @@ This website is a project for WGU BS - Software Development course C856. It is a
 
 ![Screenshot](screenshot1.jpg "Tourism Website")
 
-The site is hosted at [https://johnson336.github.io/C856/](https://johnson336.github.io/C856/).
+The site is hosted at [https://johnson336.github.io/C856/](https://johnson336.github.io/Taniti-Tourism/).
